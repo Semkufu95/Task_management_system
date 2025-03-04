@@ -41,6 +41,26 @@ cp .env.example .env
 # Start the server
 npm start
 
+/task-manager
+│── /src
+│   ├── /config
+│   │   ├── db.js              # Database connection
+│   ├── /models
+│   │   ├── User.js            # User schema
+│   │   ├── Task.js            # Task schema
+│   ├── /routes
+│   │   ├── authRoutes.js      # Authentication routes
+│   │   ├── taskRoutes.js      # Task management routes
+│   ├── /controllers
+│   │   ├── authController.js  # Authentication logic
+│   │   ├── taskController.js  # Task management logic
+│   ├── /middleware
+│   │   ├── authMiddleware.js  # JWT authentication middleware
+│   ├── server.js              # Main server file
+│── package.json               # Project dependencies
+│── .env.example               # Environment variables
+│── README.md                  # Project documentation
+
 API Routes
 
 Auth Routes
